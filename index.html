@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      main {
+        display: flex;
+        gap: 40px;
+        height: 500px;
+      }
+
+      h1 {
+        font-weight: 900;
+        font-size: 32px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      main {
+        div {
+          flex: 1;
+        }
+      }
+
+      textarea {
+        border: 1px solid black;
+        field-sizing: content;
+        flex: 1;
+        height: 100%;
+        border-radius: 16px;
+        padding: 40px;
+        width: 100%;
+      }
+
+      .result-area {
+        flex: 1;
+        height: 100%;
+        background-color: black;
+        border-radius: 16px;
+        padding: 40px;
+
+        color: red;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      button {
+        padding: 12px 24px;
+        background-color: red;
+        color: white;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 8px;
+      }
+
+      #hasil {
+        font-size: 80px;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav style="margin-bottom: 40px;">
+      <img src="/Images/Logo.svg" alt="" />
+
+      <h1>Angry Text Converter</h1>
+      <p>
+        Tidak semua orang tega menulis dengan huruf kapital. Meski tombol Caps
+        Lock dan Shift tersedia, ada kalanya kita ingin menyampaikan amarah
+        tanpa benar-benar menekan tombol tersebut dengan penuh emosi.
+      </p>
+    </nav>
+
+    <main>
+      <div>
+        <p>masukan teks disini:</p>
+
+        <textarea name="" id="userText"></textarea>
+        <button id="submitBtn">Make it angry</button>
+      </div>
+      <div class="result-area">
+        <p id="hasil">result will be here</p>
+      </div>
+    </main>
+
+ <script src="/script.js"></script>
+  </body>
+</html>
